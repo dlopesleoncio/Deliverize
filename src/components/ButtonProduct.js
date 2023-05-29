@@ -11,8 +11,7 @@ function ButtonProduct(){
         <div>
             {escondido ? null : 
             
-                <div id="popover"><h1>Produto adicionado</h1></div>
-            
+                <div id="popover" className="popover">Produto adicionad</div>
             }
             
             <button className="addButtonContainer" id="btn-add"  onClick={alternarVisibilidade}>

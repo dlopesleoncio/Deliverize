@@ -13,7 +13,9 @@ export const StyledDelivery = styled.div`
     background-color: white;
     align-items: center;
     box-shadow: 0px 1px 2px 0px #0000001A;
-
+    @media (max-width: 660px){
+        height: 32px;
+    }
 `
 export const TextDelivery = styled.div`
     height: 8px;
@@ -25,12 +27,17 @@ export const TextDelivery = styled.div`
     font-size: 12px;
     display: flex;
     align-items: center;
-
+    @media (max-width: 660px){
+        font-size: 8px;
+        margin-top: 5.33px;
+        margin-bottom: 5.33px;
+    }
 `
 export const AddressDelivery = styled.div`
     height: 16px;
     margin-left: 8px;
     margin-bottom: 8px;
+    margin-top: 8px;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 700;
@@ -40,4 +47,10 @@ export const AddressDelivery = styled.div`
     color: #656363;
     display: flex;
     align-items: center;
+    @media (max-width: 660px){
+        font-size: 8px;
+        margin-top: 0px;
+        height: 10.66px;
+
+    }
 `

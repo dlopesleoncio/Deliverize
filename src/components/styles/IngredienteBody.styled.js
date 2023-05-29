@@ -17,7 +17,6 @@ export const StyledBodyIngrediente = styled.div`
     border: 1px solid #686868;
 
     @media (max-width:600px) {
-
         position: relative;
         width: auto;
         margin-right: 0;
@@ -25,8 +24,18 @@ export const StyledBodyIngrediente = styled.div`
         border: none;
         padding: 16px;
     }
-
 `;
 
-
+export const StyledIngrediente = styled.div`
+    height: 88px;
+    //width: 359px;
+    width: 26.281112737920936vw;
+    margin-left: 8px;
+    margin-right: 8px;
+    position: relative;
+    align-items: center;
+    @media screen {
+        width: auto;
+    }
+`
 

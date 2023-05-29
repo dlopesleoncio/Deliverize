@@ -3,8 +3,8 @@ import { StyledDelivery, AddressDelivery,TextDelivery } from "./styles/Entrega.S
 function Entrega(){
     return(
     <StyledDelivery>
-        <AddressDelivery> Entrega: </AddressDelivery>
-        <TextDelivery> Endereço da API </TextDelivery>
+        <TextDelivery> Entrega: </TextDelivery>
+        < AddressDelivery> Endereço da API </AddressDelivery>
     </StyledDelivery>
     )
 }
