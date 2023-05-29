@@ -1,38 +1,422 @@
-.App {
+.Header{
+  display: flex;
+  background: #F4F4F4;
+  height: 80px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.search-input{
+  position:absolute;
+  
+  /*width: 354px;*/
+  width: 25.915%;
+  /*48px*/
+  height: 48px;
+  left:47.14494875549048vw;
+  top:16px;
+  border: 1px solid #ED3237;
+  border-radius: 4px;
+  display: flex;
+}
+@media (max-width:600px) {
+  .Header {
+    height:56px;
+  }
+  .search-input{
+    height:28.31px;
+  }
+}
+
+input::placeholder{
+  font-size: 14px;
+  color: #656363;
+}
+input[type="search"]{
+  padding-left: 2%;
+}
+
+
+
+.login{
+  height: 16px;
+  position: absolute;
+  font-family: Roboto;
+  color:#ED3237;
+  left: 120%;
+  /*parte esquerda == 1062*/
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* ------------------Estilização da sacola ---------------*/
+.carrinho-image{
+  width: 32px;
+}
+
+.carrinho-text{
+  height: 16px;
+  width: 66px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  position: absolute;
+  margin-left: 40px;
+  color: #ED3237;
+}
+.circuloSacolaContainer {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  align-self: start;
+  margin-left: 24px;
+  display: flex;
+}
+
+.circuloSacola {
+  height: 16px;
+  position: absolute;
+}
+.numberCircle{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  color: white;
+  
+  font-size: 12px;
+  align-items: center;
+}
+
+
+.buttonSacola{
+  border: none;
+  background-color: none;
+  background: local;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.cBody{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/* ------------------------Configuração do frame de ingredientes*/
+.container-ingrediente{
+  width: fit-content;
+  padding-bottom: 15px;
+
+}
+
+
+
+
+.header-ingredientes{
+  /*width: 375px;*/
+  width: 27.45241581259151vw;
+  height: 55px;
+  background-color: #FDD70E33;
+  padding-top: 8px;
+  margin-bottom:16px;
+}
+
+.tituloIngrediente{
+  position: relative;
+  
+  width: 343px;
+  height: 23px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #4E4E4E;
+
+}
+
+.subtituloIngrediente{
+  position: relative;
+  margin-left: 16px;
+  width: 343px;
+  
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #E49700;
+
+}
+
+/* numero do botao*/
+.number{
+  display: inline-block;
+  width: 25px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content{
+  text-align: center;
+  font-size: 14px;
+  width: fit-content;
+  height: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.counter{
+  font-size: 14px;
+  text-align: center;
+  width: 25px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nome-ingrediente{
+  height: 16px;
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 8px;
+  top:0%;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #4E4E4E;
+
+
+}
+
+.preco{
+  position: absolute;
+  bottom: 0%;
+  margin-left: 8px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #F09035;
+
+
+  
+}
+
+
+/*Linha de ingredientes*/
+hr{
+  width: 25.109809663250367vw;
+  height: 0px;
+  border: 1px solid #FEBC10;
+  margin-left:16px;
+  margin-right: 16px;
+  margin-top: 9px;
+  margin-bottom:8px;
+}
+
+
+/* Pergunta rodapé*/
+
+.talher{
+  height: 55px;
+  width: 27.452415812591507vw;
+  left: 0px;
+  top: 491px;
+  border-radius: 0px;
+  background: #FDD70E33;
+}
+.content-talher{
+  position: relative;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  height: 23px;
+  width: 343px;
+  margin-left: 16px;
+  margin-top: 8px;
+  top:8px;
+  margin-bottom:15px;
+  color: #4E4E4E;
+
+
+}
+
+/* ---- Botao adicionar no carrinho */
+
+.addButtonContainer{
+  position: absolute;
+  height: 40px;
+  width: 16.032210834553442vw;
+  border-radius: 4px;
+  border:none;
+  background: hsl(29, 86%, 57%);
+  cursor:pointer;
+  bottom: 0%;
+  margin-bottom: 32px;
+  right: 0%;
+  margin-right: 32px;
+  
+}
+.addButtonContent{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 10px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*  ----- Corpo do produto ------  */
+
+
+.countainer-produto{
+   height:662px;
+   /*width:597px;*/
+   width: 43.704245973645683vw;
+   position:absolute;
+   margin-top: 24px;
+   margin-left: 66px;
+   margin-bottom: 24px;
+}
+
+.imagem-produto{
+  width: 100%;
+  height: 388px;
+  margin-top: 24px;
+}
+
+.nome-produto{
   display: flex;
-  flex-direction: column;
+  height: 91.59159851074219px;
+  width: 528.5574340820312px;
+  text-align: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+
+  color: #4E4E4E;
+}
+.descricao-produto{
+  width: 100%;
+  height: fit-content;
+  color: #4E4E4E;
+  font-size:20px
 }
 
-.App-link {
-  color: #61dafb;
+.produto-preco{
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #DC6E05;
+  margin-bottom: 24px;
+  margin-top:10.41px;
+  margin-right: 17px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.preco-desconto{
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #4E4E4E;
+  text-decoration: line-through;
+
+}
+
+@media (max-width:600px) {
+  .cBody{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .countainer-produto{
+    position: relative;
+    width: auto;
+    margin-right: 16px;
+    margin-left: 16px;
+    height: fit-content;
+  }
+  .imagem-produto{
+    height: fit-content;
+  }
+
+  .nome-produto{
+    font-size:18px;
+  }
+  .descricao-produto{
+    font-size: 16px;
+  }
+
+  .container-ingrediente{
+    width: auto;
+  }
+  .header-ingredientes{
+    width: 100%;
+  }
+  .nome-ingrediente{
+    width: 100%;
+  }
+
+  .talher{
+    width: auto;
+  }
+  input[type="radio"]{
+    width: 16px;
+    color: #FEBC10;
+  }
+  .talher, label{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    background: #FEBC10;
+  }
+
+  .addButtonContainer{
+    width: 195px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  hr{
+    width: auto;
+    margin-left: 0px;
+    margin-right:0px;
   }
 }
