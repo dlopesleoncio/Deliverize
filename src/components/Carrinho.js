@@ -8,7 +8,7 @@ function Carrinho(){
                     <CircleCartContainer>
                         
                         <CircleCartContent src={Ellipse} alt='Circulo'></CircleCartContent>
-                        <NumberCircle>1</NumberCircle>
+                        <NumberCircle>0</NumberCircle>
                     </CircleCartContainer>                    
                     <TextCart HTMLfor="carrinho" className="carrinho-text">Carrinho</TextCart>
             </StyledCarrinho>

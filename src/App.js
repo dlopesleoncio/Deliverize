@@ -29,7 +29,7 @@ function App() {
         <Logo/>
         <Entrega json = {json}/>
         
-          <input type='search' class='search-input' placeholder='Busque por estabelecimento ou produtos'/>
+          <input type='search' className='search-input' placeholder='Busque por estabelecimento ou produtos'/>
         <EntrarIcon/>
         <Carrinho/>
       </header>

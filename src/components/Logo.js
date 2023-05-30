@@ -7,8 +7,8 @@ function Logo(){
     return (
       <Logocontainer>
 
-        <LogoCaixa src={caixaLogo} class='logo-caixa' alt='Carrinho de compras'></LogoCaixa>
-        <LogoText src={logo1} class='logo-letra'></LogoText>
+        <LogoCaixa src={caixaLogo} className='logo-caixa' alt='Carrinho de compras'></LogoCaixa>
+        <LogoText src={logo1} className='logo-letra'></LogoText>
     
       </Logocontainer>  
 

@@ -1,10 +1,12 @@
 import { StyledDelivery, AddressDelivery,TextDelivery } from "./styles/Entrega.Styled";
 
-function Entrega(){
+function Entrega({json}){
+
+     
     return(
     <StyledDelivery>
         <TextDelivery> Entrega: </TextDelivery>
-        < AddressDelivery> Endereço da API </AddressDelivery>
+        < AddressDelivery> R. Antonio Braune, 222 </AddressDelivery>
     </StyledDelivery>
     )
 }

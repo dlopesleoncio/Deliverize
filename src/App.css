@@ -67,7 +67,6 @@ input[type="search"]{
 
 
 .header-ingredientes{
-  /*width: 375px;*/
   width: 27.45241581259151vw;
   height: 55px;
   background-color: #FDD70E33;
@@ -233,6 +232,71 @@ hr{
   color: #FFFFFF;
 }
 
+/*--------------------POPOVER*/
+
+.popover{
+  margin-top: 15%;
+  margin-bottom: 15%;
+
+  width: fit-content;
+  position: absolute;
+  height: fit-content;
+  padding: 5px;
+  background-color:#F8F8F8;
+  border-radius: 10px;
+  left:10%;
+  right: 10%;
+  bottom: 10%;
+  border-radius: [object Object] px;
+
+
+}
+#headder{
+  background: #F09035;
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  height: 32px;
+  color: #FFFFFF;
+  height: 32px;
+  width: max-content;
+  border-radius: [object Object]px;
+
+  padding-top: 4px;
+  padding-left: 2px;
+  padding-bottom: 4px;
+}
+
+
+.header-popover{
+  font-size: 14px;
+  color: #BC2E31;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+
+.body-pop , li, ul{
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #4E4E4E;
+  margin-top: 8px;
+
+}
+
+
+
+
 /*  ----- Corpo do produto ------  */
 
 
@@ -340,7 +404,7 @@ hr{
     width: 16px;
     color: #FEBC10;
   }
-  .talher, label{
+  .talher{
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
